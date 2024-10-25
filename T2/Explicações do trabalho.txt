@@ -1,0 +1,33 @@
+Trabalho de Haskell
+
+Temos que fazer um suposto computador simplificado que:
+
+	Le um arquivo texto, puxando a "memoria" dele e depois salvar no aruivo as alterações
+	
+	A memoria possui 256 bytes, indo de 0 a 255
+
+	Dados de RDM e REM tem 8 bits
+
+	As posiçoes 251 a 255 são memorias de video, portantoi qualquer valor valor inteiro de 8 bits armazenado, tera seu valor em decimal exibido na tela
+
+	A ULA possui um ACC de 8 bits e uma flag EQZ, que indica quando o valor do ACC é zero
+
+	Tambem a ULA é capaz de somar/subtrair o conteudo de um posição de memoria com o conteudo do ACC e armazenar no proprio
+
+	O processador possui um contador de instruçoes de 8 bits e um registrador de instruçoes (RI) de 16 bits
+
+	RI possui 16 bits, pois tem 8 bits da instrução e 8 bits do endereço de memoria, assim o contador é incrementado de 2 em 2
+
+Simplificações:
+	
+	Memorias podem ser uma lista de tuplas de dois Interios, o primeiro o endereço de memoria e o segundo o conteudo
+
+	Operações aritimeticas em decimal
+
+	ULA so trabalho com valores de 8 bits, não possui carry, overflow e underflow
+
+	Deve ser implementado estruturas de dados para simular as memorias do comutador
+
+	
+
+	
