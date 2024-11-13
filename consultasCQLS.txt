@@ -1,0 +1,30 @@
+-- Descobrir o destino pelo Nome completo
+
+SELECT passenger_id FROM key1.Q1 WHERE firstname = 'Shino' AND lastname = 'Kakinuma'
+10964
+
+SELECT country FROM ke1.Q2 WHERE passenger_id = 10964
+SWEDEN
+
+-- Descobrir o nome do aeroporto dos voos de terça feira que tem capacidade 420
+
+SELECT airplane_id FROM Key2.Q3 WHERE capacity = 420
+
+386
+400
+410
+...
+
+SELECT airport_name FROM Key.Q4 WHERE airplane_id = 386 and tuesday = 1
+RUSTENBURG
+FOUGAMOU
+STAUNING
+...
+
+-- Descobrir quando chega um voo, que tem destino brasil, de um passageiro especifico
+
+SELECT flight_id FROM Key3.Q5 WHERE firstname = 'Dwaine' AND lastname = 'Carpenter'
+388856
+
+SELECT arraival FROM Key3.Q6 WHERE flight_id = 388856
+2023-05-19 04:18:00
